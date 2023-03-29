@@ -17,15 +17,15 @@ Once the quiz is complete or time runs out the user will be alerted the option t
 
 
 Below are images from the deployed application showcasing the homepage of the quiz followed by the first question upon clicking start.
-![Password-Generator Deployed](/assets/images/code-quiz1)
-![](/assets/images/code-quiz2)
+![Code Quiz Deployed](/assets/images/code-quiz1.PNG)
+![](/assets/images/code-quiz2.PNG)
 
 
 Below are images of the prompt to submit a score using initials once the quiz is completed. 
-![](/assets/images/code-quiz-alert)
+![](/assets/images/code-quiz-alert.PNG)
 
 This is an image of the highscore alert box which is displayed when a user clicks on the highscore button of the home page
-![](/assets/images/code-quiz-highscores)
+![](/assets/images/code-quiz-highscores.PNG)
 
 
 link to deployed application: https://gurverm.github.io/code-quiz/ 
