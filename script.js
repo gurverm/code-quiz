@@ -75,7 +75,7 @@ var startTime = () => {
 
 //removing 15 seconds on timer
 
-var subtractTime = () => {
+var subtractTime = function(){ {
     if (timeLeft > 15) {
         timeLeft -= 15;
     } else {
@@ -83,3 +83,56 @@ var subtractTime = () => {
     }
 }
 
+// question and answer variables:
+
+
+
+var questionTitleEl = document.getElementById("question-title");
+var questionContentEl = document.getElementById("question-content");
+var questionFooterEl = document.getElementById("question-footer");
+
+var answer1El = document.getElementById("answer1");
+var answer2El = document.getElementById("answer2");
+var answer3El = document.getElementById("answer3");
+var answer4El = document.getElementById("answer4");
+
+
+var highscoresEl = document.getElementById("highscores");
+var mainButtonEl = document.getElementById("main-button");
+var instructionEl = document.getElementById("instruction");
+
+
+var questionOne = function(){
+    questionTitleEl.textContent = "How do you write \"Hello World\" in an alert box?";//question from w3schools
+    answer1El.textContent = "msgBox('Hello World');";
+    answer2El.textContent = "alert('Hello World');";
+    answer3El.textContent = "msg('Hello World');";
+    answer4El.textContent = "alertBox('Hello World');";
+
+    //adds onclick events to the options
+    answer1El.onclick = function(){
+        questionFooterEl.textContent = "Incorrect";
+        subtractTime();
+        timerEl.textContent = timeLeft;
+        showQuestion5();
+    }
+    answer2El.onclick = function(){
+        questionFooterEl.textContent = "Correct";
+        currentScore++;
+        showQuestion5();
+    }
+    answer3El.onclick = function(){
+        questionFooterEl.textContent = "Incorrect";
+        subtractTime();
+        timerEl.textContent = timeLeft;
+        showQuestion5();
+    }
+    answer4El.onclick = function(){
+        questionFooterEl.textContent = "Incorrect";
+        subtractTime();
+        timerEl.textContent = timeLeft;
+        showQuestion5();
+    }
+}
+
+}
