@@ -16,7 +16,8 @@ N/A
 
 ## Usage
 
-This quiz challenges users to partake in a timed javascript quiz and store their hiscores as well to compare to others of themselves. To begin the user simply presses start where they are presented with the first question and the timer of 45 seconds begins to cound down.
+This quiz challenges users to partake in a timed javascript quiz and store their highscores to compare to others or themselves. To begin, the user simply presses start, they are then presented with the first question and a timer of 45 seconds begins to cound down. If a question is answered correct the user will move on to the next question. If answered incorrectly the timer will deduct 10 seconds off the remaining time. 
+Once the quiz is complete or time runs out the user will be alerted the option to save their highscore by typing in their initials.
 
 
 Below are images from the deployed application showcasing a randomly generated password in both an alert box as well as on the webpage itself.
