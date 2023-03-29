@@ -1,49 +1,3 @@
-var question = [
-    {
-        question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
-        options: ['Javascript', 'terminal/bash', 'for loops', 'condole.log']
-    },
-    {
-        question:'commonly used data types DO Not Include:',
-        options:['strings', 'booleans', 'alerts', 'numbers']
-    },
-    {
-        question:'Arrays in JavaScript can be used to store________.',
-        options:['numbers and strongs','other arrays','booleans','all of the above']
-    },
-];
-
-
-var current = 0; 
-var points = 0;
-
-var questionEl = document.querySelector('#question-content');
-var optionsEl = document.querySelector('#answer1','#answer2','#answer3','#answer4');
-
-var chooseOption = function(){
-
-var correctOptionIndex = data[current].answer;
-
-    current++;
-    optionsEl.innerHTML = '';
-    putQuestion(current);
-    putOptions(current);
-};
-
-var putQuestion = function (index){
-    questionEl.textContent = data[index].question;
-}
-
-var putOptions = function (index){
-    var options = data[index].options;
-    for (var i = 0; i < options.length; i++){
-        var options = options[i];
-        var buttonEl = document.createElement('button');
-        buttonEl.textContent = options;
-        optionsEl.appendChild(buttonEl);
-    }
-}
-
 //above code not rendering onto page ? debug
 
 // timer declaration
@@ -56,15 +10,15 @@ var highscore = JSON.parse(localStorage.getItem('highscores')) || {};
 
 // create the timer
 
-var startTime = () => {
+var startTime = function() {
     timeLeft = 60;
-    var timeDecrease = setInterval(() => {
+    var timeDecrease = setInterval(function() {
         timeLeft--;
         timerEl.textContent = timeLeft;
         if(endGame === true){
             clearInterval(timeDecrease);
         }
-        else(timeLeft < 0) {
+        else(timeLeft < 0); {
             clearInterval(timeDecrease);
             alert('You are out of time! Your score is: '+currentScore);
             return;
@@ -103,36 +57,37 @@ var instructionEl = document.getElementById("instruction");
 
 
 var questionOne = function(){
-    questionTitleEl.textContent = "How do you write \"Hello World\" in an alert box?";//question from w3schools
-    answer1El.textContent = "msgBox('Hello World');";
-    answer2El.textContent = "alert('Hello World');";
-    answer3El.textContent = "msg('Hello World');";
-    answer4El.textContent = "alertBox('Hello World');";
+    questionTitleEl.textContent = 'A very useful tool used during development and debugging for printing content to the debugger is:';
+    answer1El.textContent = "JavaScript";
+    answer2El.textContent = "Terminal/Bash";
+    answer3El.textContent = "for loops";
+    answer4El.textContent = "console.log";
+
+},
 
     //adds onclick events to the options
     answer1El.onclick = function(){
         questionFooterEl.textContent = "Incorrect";
         subtractTime();
         timerEl.textContent = timeLeft;
-        showQuestion5();
+        questionOne();
     }
     answer2El.onclick = function(){
         questionFooterEl.textContent = "Correct";
         currentScore++;
-        showQuestion5();
+        questionOne();
     }
     answer3El.onclick = function(){
         questionFooterEl.textContent = "Incorrect";
         subtractTime();
         timerEl.textContent = timeLeft;
-        showQuestion5();
+        questionOne();
     }
     answer4El.onclick = function(){
         questionFooterEl.textContent = "Incorrect";
         subtractTime();
         timerEl.textContent = timeLeft;
-        showQuestion5();
+        questionOne();
     }
 }
 
-}
