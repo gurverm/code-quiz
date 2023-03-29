@@ -21,7 +21,7 @@ Below are images from the deployed application showcasing the homepage of the qu
 ![](/assets/images/code-quiz2.PNG)
 
 
-Below are images of the prompt to submit a score using initials once the quiz is completed. 
+Below are images of a prompt to submit score using initials once the quiz is completed. 
 ![](/assets/images/code-quiz-alert.PNG)
 
 This is an image of the highscore alert box which is displayed when a user clicks on the highscore button of the home page
