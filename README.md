@@ -11,15 +11,21 @@ N/A
 
 ## Usage
 
-This quiz challenges users to partake in a timed javascript quiz and store their highscores to compare to others or themselves. To begin, the user simply presses start, they are then presented with the first question and a timer of 45 seconds begins to cound down. If a question is answered correct the user will move on to the next question. If answered incorrectly the timer will deduct 10 seconds off the remaining time. 
-Once the quiz is complete or time runs out the user will be alerted the option to save their highscore by typing in their initials.
+This quiz challenges users to partake in a timed javascript quiz and store their highscores to compare to others or themselves. To begin, the user simply presses the start button. They are then presented with the first question and a timer of 45 seconds begins to cound down. If a question is answered correct the user will move on to the next question; if answered incorrectly the timer will deduct 10 seconds off the remaining time. 
+
+Once the quiz is complete or time runs out the user will be alerted the option to save their highscore by typing in their initials. A minimum score of 1 must be achieved to record a score.
 
 
-Below are images from the deployed application showcasing -----......
+Below are images from the deployed application showcasing the homepage of the quiz followed by the first question upon clicking start.
+![Password-Generator Deployed](/assets/images/code-quiz1)
+![](/assets/images/code-quiz2)
 
 
-![Password-Generator Deployed](/assets/images/alertBox.PNG)
-![](/assets/images/Deployed.PNG)
+Below are images of the prompt to submit a score using initials once the quiz is completed. 
+![](/assets/images/code-quiz-alert)
+
+This is an image of the highscore alert box which is displayed when a user clicks on the highscore button of the home page
+![](/assets/images/code-quiz-highscores)
 
 
 link to deployed application: https://gurverm.github.io/code-quiz/ 

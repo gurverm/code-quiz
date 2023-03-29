@@ -2,7 +2,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
 }
-
+/* important variables used and changed throughout the stylesheet */
 :root {
     --tan:rgba(253, 137, 5, 0.267);
     --orange:rgb(255, 60, 0);
@@ -16,6 +16,7 @@ body {
     background-color: var(--tan);
     font-weight: 300;
 }
+/* flex properties added to the body and nav */
 
 body h1 h2 h3 {
     font-weight:700;
@@ -60,6 +61,8 @@ nav {
     cursor: pointer;
 }
 
+/* hover properties added to the two buttons, hovering will
+    now change the color as well as the cursor */
 #question-title {
     width: 100%;
     text-align: left;
@@ -69,7 +72,7 @@ nav {
   }
   
   #question-content {
-    height:70%;
+    height:100%;
     text-align: center;
     display:flex;
     flex-direction: column;

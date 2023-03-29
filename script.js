@@ -1,6 +1,4 @@
-//===============
-
-
+// Question and answer variables
 var questionTitleEl = document.getElementById("question-title");
 var questionContentEl = document.getElementById("question-content");
 var questionFooterEl = document.getElementById("question-footer");
@@ -47,7 +45,6 @@ var subtractTime = () => {
     }
 }
 
-//
 //sets timer to 0, lets you record your score, and reloads the page
 var endGame = () => {
     endGame = true;
